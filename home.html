@@ -664,10 +664,20 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
                 </div>
                 <!-- Mobile menu button -->
                 <div class="md:hidden flex items-center">
-                    <button class="text-gray-600 hover:text-brand-dark focus:outline-none">
+                    <button id="mobileMenuButton" aria-expanded="false" aria-label="Abrir menu" class="text-gray-600 hover:text-brand-dark focus:outline-none flex items-center gap-2">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="menu" class="lucide lucide-menu w-6 h-6"><path d="M4 5h16"></path><path d="M4 12h16"></path><path d="M4 19h16"></path></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="x" class="lucide lucide-x w-6 h-6 hidden"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
                     </button>
                 </div>
+            </div>
+        </div>
+        <!-- Mobile dropdown -->
+        <div id="mobileMenu" class="md:hidden hidden border-t border-gray-100 bg-white/90 backdrop-blur-md">
+            <div class="px-4 py-3 space-y-2">
+                <a href="#sobre" class="block px-3 py-2 rounded-lg text-gray-700 hover:bg-brand-light hover:text-brand-dark font-medium">Sobre</a>
+                <a href="#qualificacoes" class="block px-3 py-2 rounded-lg text-gray-700 hover:bg-brand-light hover:text-brand-dark font-medium">FormaÇõÇœo</a>
+                <a href="#ebooks" class="block px-3 py-2 rounded-lg text-gray-700 hover:bg-brand-light hover:text-brand-dark font-medium">E-books</a>
+                <a href="#contato" class="block px-3 py-2 rounded-lg bg-brand text-white text-center font-semibold hover:bg-brand-dark shadow-md shadow-brand/20">Agendar Consulta</a>
             </div>
         </div>
     </nav>
@@ -935,6 +945,46 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
         });
         scrollTopBtn.addEventListener('click', () => {
             window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Menu mobile (sanduíche)
+        const mobileMenuButton = document.getElementById('mobileMenuButton');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const [menuIcon, closeIcon] = mobileMenuButton.querySelectorAll('svg');
+
+        const toggleMobileMenu = () => {
+            const isOpen = !mobileMenu.classList.contains('hidden');
+            if (isOpen) {
+                mobileMenu.classList.add('hidden');
+                mobileMenuButton.setAttribute('aria-expanded', 'false');
+                menuIcon.classList.remove('hidden');
+                closeIcon.classList.add('hidden');
+            } else {
+                mobileMenu.classList.remove('hidden');
+                mobileMenuButton.setAttribute('aria-expanded', 'true');
+                menuIcon.classList.add('hidden');
+                closeIcon.classList.remove('hidden');
+            }
+        };
+
+        mobileMenuButton.addEventListener('click', toggleMobileMenu);
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                mobileMenuButton.setAttribute('aria-expanded', 'false');
+                menuIcon.classList.remove('hidden');
+                closeIcon.classList.add('hidden');
+            });
+        });
+
+        // Fecha o menu caso a tela seja redimensionada para desktop
+        window.addEventListener('resize', () => {
+            if (window.innerWidth >= 768) {
+                mobileMenu.classList.add('hidden');
+                mobileMenuButton.setAttribute('aria-expanded', 'false');
+                menuIcon.classList.remove('hidden');
+                closeIcon.classList.add('hidden');
+            }
         });
     </script>
 
