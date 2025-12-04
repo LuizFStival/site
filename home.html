@@ -1,4 +1,4 @@
-<html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><script>(function(firebaseConfig, initialAuthToken, appId) {
+﻿<html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><script>(function(firebaseConfig, initialAuthToken, appId) {
         window.__firebase_config = firebaseConfig;
         window.__initial_auth_token = initialAuthToken;
         window.__app_id = appId;
@@ -717,18 +717,18 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
     </section>
 
     <!-- Sobre Section (Biogragia) -->
-    <section id="sobre" data-reveal class="py-20 bg-white">
+    <section id="sobre" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col lg:flex-row items-center gap-16">
+            <div class="flex flex-col lg:flex-row items-start gap-16">
                 <!-- Image Column -->
-                <div class="w-full lg:w-1/2 relative">
+                <div class="w-full lg:w-5/12 relative sticky top-24">
                     <div class="relative z-10 rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
                         <!-- Placeholder for Dr. Diego's Image -->
                         <div class="aspect-[3/4] bg-gray-200 w-full relative group">
-                            <img src="resourses/Dr.DiegoPerfil.png" alt="Dr. Diego Tareszkiewicz" class="w-full h-full object-cover group-hover:grayscale transition-all duration-500">
+                            <img src="resourses/Dr.DiegoPerfil.png" alt="Dr. Diego Tareszkiewicz" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500">
                              <div class="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-black/80 to-transparent text-white">
                                 <p class="font-bold text-xl">Dr. Diego Lopes Tareszkiewicz</p>
-                                <p class="text-brand-acdarkcent text-sm">CRO 26460 PR</p>
+                                <p class="text-brand-accent text-sm">CRO 26460 PR</p>
                             </div>
                         </div>
                     </div>
@@ -737,22 +737,25 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
                 </div>
 
                 <!-- Text Column -->
-                <div class="w-full lg:w-1/2">
-                    <h2 class="text-3xl md:text-4xl font-bold text-brand-dark mb-6">Uma trajetória dedicada à <span class="text-brand">excelência</span></h2>
+                <div class="w-full lg:w-7/12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-brand-dark mb-6">Uma trajet&oacute;ria dedicada &agrave; <span class="text-brand">excel&ecirc;ncia</span></h2>
                     
                     <div class="space-y-6 text-gray-600 text-lg leading-relaxed">
                         <p>
-                            Profissional atualizado que busca enxergar o paciente em sua totalidade. É oficial <strong>R2 do Exército Brasileiro</strong> (Arma de Artilharia) e triatleta por paixão, tendo disputado o <strong>Mundial de Triathlon Olímpico</strong> na Alemanha (2007).
+                            <strong>Dr. Diego Lopes Tareszkiewicz</strong> &eacute; cirurgi&atilde;o-dentista com vis&atilde;o Integrativa e Cl&iacute;nico Geral, discente de Medicina na Universidade Positivo (Curitiba&ndash;PR).
+                        </p>
+                        <p>
+                            &Eacute; autor dos livros <em>O Poder do Sol</em>, <em>Vitaminas e Minerais</em> e do rec&eacute;m-lan&ccedil;ado e j&aacute; Best Seller, <strong>Sa&uacute;de Blindada: Longevidade em Tempos T&oacute;xicos</strong>.
                         </p>
                         
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
                             <div class="bg-brand-light/50 p-4 rounded-xl flex items-start gap-3">
                                 <div class="p-2 bg-brand/10 rounded-lg text-brand">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="book-open" class="lucide lucide-book-open w-6 h-6"><path d="M12 7v14"></path><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path></svg>
                                 </div>
                                 <div>
                                     <h4 class="font-bold text-brand-dark">Autor Best-Seller</h4>
-                                    <p class="text-sm">"Saúde Blindada" e "O Poder do Sol"</p>
+                                    <p class="text-sm">Sa&uacute;de Blindada</p>
                                 </div>
                             </div>
                             <div class="bg-brand-light/50 p-4 rounded-xl flex items-start gap-3">
@@ -761,114 +764,238 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
                                 </div>
                                 <div>
                                     <h4 class="font-bold text-brand-dark">Internacional</h4>
-                                    <p class="text-sm">Membro da AAOSH (EUA)</p>
+                                    <p class="text-sm">Harvard &amp; Tel Aviv</p>
                                 </div>
                             </div>
                         </div>
 
                         <p>
-                            Formado em Educação Física pela UTFPR e Odontologia pela Universidade Tuiuti do Paraná. Possui Pós-Graduação em Odontologia Biológica e Integrativa.
+                            P&oacute;s-graduado em Odontologia Biol&oacute;gica Integrativa, possui forma&ccedil;&atilde;o complementar em <strong>Harvard</strong> (sa&uacute;de geral) e na <strong>Universidade de Tel Aviv</strong> (sistema imune, c&eacute;lulas e vacinas). Membro da Associa&ccedil;&atilde;o de Odontologia Integrativa dos Estados Unidos, &eacute; triatleta com provas no Brasil e no exterior. Atua com foco em sa&uacute;de humana como um todo, performance e longevidade.
                         </p>
+
                         <p>
-                            Atualmente é discente de <strong>Medicina na Universidade Positivo</strong> e Pós-Graduando em DOR pelo <strong>Hospital Israelita Albert Einstein</strong>.
+                            &Eacute; tamb&eacute;m autor de publica&ccedil;&otilde;es cient&iacute;ficas, incluindo um artigo de destaque sobre <strong>sa&uacute;de mitocondrial e envelhecimento</strong>, publicado na revista <em>DeLos</em>, refor&ccedil;ando sua dedica&ccedil;&atilde;o &agrave; pesquisa e &agrave; promo&ccedil;&atilde;o da sa&uacute;de baseada em evid&ecirc;ncias.
                         </p>
+
+                        <div class="bg-gray-50 border-l-4 border-brand p-4 rounded-r-lg text-base">
+                            <p class="italic mb-2">
+                                &quot;Desenvolve h&aacute; anos trabalho voltado &agrave; sa&uacute;de, educa&ccedil;&atilde;o, preven&ccedil;&atilde;o de doen&ccedil;as e desenvolvimento comunit&aacute;rio em Curitiba, sua cidade natal.&quot;
+                            </p>
+                            <p class="text-sm">
+                                Participou tamb&eacute;m de duas elei&ccedil;&otilde;es: foi candidato a deputado estadual pelo Paran&aacute; e candidato a vereador.
+                            </p>
+                        </div>
+
+                        <div class="pt-6 border-t border-gray-100 mt-6">
+                            <h4 class="font-bold text-brand-dark mb-2 flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="history" class="lucide lucide-history w-5 h-5 text-brand"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path><path d="M3 3v5h5"></path><path d="M12 7v5l4 2"></path></svg>
+                                Ra&iacute;zes Hist&oacute;ricas
+                            </h4>
+                            <p class="text-sm text-gray-500 mb-2">
+                                Dr. Diego &eacute; descendente direto de <strong>Jer&ocirc;nimo Durski</strong> (1824&ndash;1905) &ndash; pioneiro da educa&ccedil;&atilde;o polonesa no Paran&aacute; e autor do <em>Elementarz</em>. A linhagem familiar, documentada no FamilySearch, confirma a tradi&ccedil;&atilde;o:
+                            </p>
+                            <p class="text-xs text-gray-400 font-mono bg-gray-50 p-3 rounded-lg">
+                                Jer&ocirc;nimo Durski -> Maria Wieczoreska Durski -> Jos&eacute; Jo&atilde;o da Cruz -> Odah Terezinha Amodio Cruz -> Marcos Antonio Cruz Tareszkiewicz -> <span class="text-brand font-bold">Diego Lopes Tareszkiewicz</span>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Qualificações (Cards Grid) -->
-    <section id="qualificacoes" data-reveal class="py-20 bg-brand-light/30">
+    <!-- Qualificacoes (Cards Grid) -->
+    <section id="qualificacoes" class="py-20 bg-brand-light/30">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <span class="text-brand font-bold uppercase tracking-wider text-sm">Formação Acadêmica</span>
-                <h2 class="text-3xl md:text-4xl font-bold text-brand-dark mt-2">Educação de ponta para cuidar de você</h2>
+                <span class="text-brand font-bold uppercase tracking-wider text-sm">Forma&ccedil;&atilde;o Acad&ecirc;mica</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-brand-dark mt-2">Educa&ccedil;&atilde;o de ponta para cuidar de voc&ecirc;</h2>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Card 1 -->
-                <div data-reveal data-reveal-delay="0" class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 card-hover group">
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 card-hover group">
                     <div class="w-14 h-14 bg-red-50 rounded-xl flex items-center justify-center mb-6 group-hover:bg-red-100 transition-colors">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="graduation-cap" class="lucide lucide-graduation-cap w-8 h-8 text-red-600"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"></path><path d="M22 10v6"></path><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path></svg>
                     </div>
                     <h3 class="text-xl font-bold text-gray-800 mb-2">Harvard University</h3>
                     <p class="text-sm text-gray-500 font-semibold mb-4">2018</p>
                     <p class="text-gray-600">
-                        Curso focado na promoção da saúde global, com ênfase em qualidade e segurança do paciente.
+                        Curso focado na promo&ccedil;&atilde;o da sa&uacute;de global, com &ecirc;nfase em qualidade e seguran&ccedil;a do paciente.
                     </p>
                 </div>
 
                 <!-- Card 2 -->
-                <div data-reveal data-reveal-delay="0.08" class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 card-hover group">
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 card-hover group">
                     <div class="w-14 h-14 bg-blue-50 rounded-xl flex items-center justify-center mb-6 group-hover:bg-blue-100 transition-colors">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="shield-check" class="lucide lucide-shield-check w-8 h-8 text-blue-600"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path><path d="m9 12 2 2 4-4"></path></svg>
                     </div>
                     <h3 class="text-xl font-bold text-gray-800 mb-2">Tel Aviv University</h3>
                     <p class="text-sm text-gray-500 font-semibold mb-4">2019</p>
                     <p class="text-gray-600">
-                        Especialização em Vírus e defesas do organismo: Células, Sistema Imune e Vacinas.
+                        Especializa&ccedil;&atilde;o em V&iacute;rus e defesas do organismo: C&eacute;lulas, Sistema Imune e Vacinas.
                     </p>
                 </div>
 
                 <!-- Card 3 -->
-                <div data-reveal data-reveal-delay="0.16" class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 card-hover group">
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 card-hover group">
                     <div class="w-14 h-14 bg-indigo-50 rounded-xl flex items-center justify-center mb-6 group-hover:bg-indigo-100 transition-colors">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="heart-pulse" class="lucide lucide-heart-pulse w-8 h-8 text-indigo-600"><path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"></path><path d="M3.22 13H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27"></path></svg>
                     </div>
                     <h3 class="text-xl font-bold text-gray-800 mb-2">Albert Einstein</h3>
                     <p class="text-sm text-gray-500 font-semibold mb-4">2022</p>
                     <p class="text-gray-600">
-                        Pós-graduação em Gestão da Dor no renomado Hospital Israelita Albert Einstein, SP.
+                        P&oacute;s-gradua&ccedil;&atilde;o em Gest&atilde;o da Dor no renomado Hospital Israelita Albert Einstein, SP.
                     </p>
                 </div>
             </div>
             
             <div class="mt-8 text-center">
                  <div class="inline-flex items-center justify-center p-1 rounded-full bg-white border border-gray-200 shadow-sm">
-                    <span class="px-4 py-2 text-sm text-gray-600">Também possui certificações em Suplementação Geral e Cardiovascular</span>
+                    <span class="px-4 py-2 text-sm text-gray-600">Tamb&eacute;m possui certifica&ccedil;&otilde;es em Suplementa&ccedil;&atilde;o Geral e Cardiovascular</span>
                  </div>
             </div>
         </div>
     </section>
 
     <!-- Ebooks Section -->
-    <section id="ebooks" data-reveal class="py-20 bg-white">
+    <section id="ebooks" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
+                <div class="inline-flex items-center px-3 py-1 rounded-full bg-brand/10 text-brand text-xs font-bold uppercase tracking-widest mb-4">
+                    Biblioteca Oficial
+                </div>
                 <h2 class="text-3xl md:text-4xl font-bold text-brand-dark">Conhecimento que transforma</h2>
-                <p class="mt-4 text-gray-600">Dê o primeiro passo para a sua transformação com nossos materiais exclusivos.</p>
+                <p class="mt-4 text-gray-600">D&ecirc; o primeiro passo para a sua transforma&ccedil;&atilde;o com nossos materiais exclusivos.</p>
             </div>
 
+            <!-- FEATURED PRODUCT: Sa&uacute;de Blindada -->
+            <div class="mb-16 bg-white rounded-3xl overflow-hidden shadow-2xl border border-gray-100 relative max-w-5xl mx-auto">
+                <div class="absolute top-0 right-0 bg-brand text-white text-xs font-bold px-4 py-2 rounded-bl-xl z-20 shadow-sm">BEST SELLER</div>
+                
+                <div class="flex flex-col lg:flex-row">
+                    <!-- Column 1: Image & Basic Info -->
+                    <div class="lg:w-2/5 bg-gray-50 p-8 flex flex-col items-center text-center border-r border-gray-100">
+                        <!-- Book Cover Placeholder -->
+                        <div class="relative w-48 aspect-[2/3] shadow-2xl mb-8 transform hover:scale-105 transition-transform duration-500 rounded-r-md">
+                            <img src="resourses/saudeBlindada.png" alt="Capa do Livro Sa&uacute;de Blindada" class="w-full h-full object-cover rounded-r-md">
+                            <div class="absolute inset-y-0 left-0 w-2 bg-gradient-to-r from-white/30 to-transparent"></div>
+                        </div>
+                        
+                        <!-- Badges indicativos -->
+                        <div class="w-full flex flex-col gap-2">
+                             <div class="flex items-center justify-center gap-2 text-sm text-brand-dark font-semibold bg-brand-light/50 py-2 rounded-lg w-full">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check-circle" class="lucide lucide-check-circle w-4 h-4"><path d="M21.801 10A10 10 0 1 1 17 3.335"></path><path d="m9 11 3 3L22 4"></path></svg>
+                                Vers&atilde;o Impressa ou Digital
+                            </div>
+                        </div>
+                        <p class="text-xs text-gray-500 mt-2">Confira as op&ccedil;&otilde;es </p>
+                    </div>
+
+                    <!-- Column 2: Details & Content -->
+                    <div class="lg:w-3/5 p-8 lg:p-10 flex flex-col">
+                        <h3 class="text-3xl font-bold text-brand-dark mb-1">Sa&uacute;de Blindada</h3>
+                        <p class="text-brand text-lg font-medium mb-6">Longevidade em tempos t&oacute;xicos</p>
+
+                        <div class="prose prose-green text-gray-600 mb-8 leading-relaxed">
+                            <p class="mb-4">
+                                <strong>Descubra como ser saud&aacute;vel nos dias atuais.</strong> Vivemos em uma era marcada por vil&otilde;es que amea&ccedil;am nossa sa&uacute;de: polui&ccedil;&atilde;o, radia&ccedil;&otilde;es, agrot&oacute;xicos e estresse. Como proteger o corpo e a mente?
+                            </p>
+                            <p class="mb-4">
+                                Neste livro, compartilho minha experi&ecirc;ncia cl&iacute;nica para mostrar como &eacute; poss&iacute;vel assumir o controle da pr&oacute;pria sa&uacute;de. Um guia essencial de quase 500 p&aacute;ginas para quem deseja fortalecer a imunidade e conquistar longevidade.
+                            </p>
+                            <p class="italic text-brand-dark font-medium border-l-4 border-brand pl-4">
+                                &ldquo;Abra o olho, cuide de voc&ecirc;.&rdquo;
+                            </p>
+                        </div>
+
+                        <!-- Accordion for Sum&aacute;rio -->
+                        <details class="mb-8 group bg-gray-50 rounded-xl border border-gray-200">
+                            <summary class="flex items-center justify-between cursor-pointer p-4 font-semibold text-gray-700 hover:text-brand transition-colors">
+                                <span>Ver Sum&aacute;rio Completo</span>
+                                <span class="transition group-open:rotate-180">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="chevron-down" class="lucide lucide-chevron-down w-5 h-5"><path d="m6 9 6 6 6-6"></path></svg>
+                                </span>
+                            </summary>
+                            <div class="px-4 pb-4 text-sm text-gray-600 h-64 overflow-y-auto custom-scrollbar border-t border-gray-200 pt-4">
+                                <ul class="space-y-2">
+                                    <li class="flex gap-2"><span class="text-brand font-bold">&bull;</span> Gen&eacute;tica n&atilde;o &eacute; destino: Os segredos da epigen&eacute;tica</li>
+                                    <li class="flex gap-2"><span class="text-brand font-bold">&bull;</span> Chegar aos 100 anos: Por que esse marco est&aacute; em risco?</li>
+                                    <li class="flex gap-2"><span class="text-brand font-bold">&bull;</span> As amea&ccedil;as &agrave; longevidade</li>
+                                    <li class="flex gap-2"><span class="text-brand font-bold">&bull;</span> A chave para uma vida longa e saud&aacute;vel</li>
+                                    <li class="flex gap-2"><span class="text-brand font-bold">&bull;</span> Estrat&eacute;gias anti-aging</li>
+                                    <li class="flex gap-2"><span class="text-brand font-bold">&bull;</span> A import&acirc;ncia da atividade f&iacute;sica e sono reparador</li>
+                                    <li class="flex gap-2"><span class="text-brand font-bold">&bull;</span> A import&acirc;ncia da sa&uacute;de mental</li>
+                                    <li class="flex gap-2"><span class="text-brand font-bold">&bull;</span> Eixo boca-intestino-c&eacute;rebro: Intestino - nosso segundo c&eacute;rebro</li>
+                                    <li class="flex gap-2"><span class="text-brand font-bold">&bull;</span> Intoler&acirc;ncias e alergias alimentares</li>
+                                    <li class="flex gap-2"><span class="text-brand font-bold">&bull;</span> Doen&ccedil;as autoimunes e Compuls&atilde;o alimentar</li>
+                                    <li class="flex gap-2"><span class="text-brand font-bold">&bull;</span> Jejum intermitente e os benef&iacute;cios de jantar cedo</li>
+                                    <li class="flex gap-2"><span class="text-brand font-bold">&bull;</span> Alimentos &ndash; her&oacute;is ou vil&otilde;es em nossa mesa?</li>
+                                    <li class="flex gap-2"><span class="text-brand font-bold">&bull;</span> Ultraprocessados, Panelas t&oacute;xicas e Impactos do &aacute;lcool</li>
+                                    <li class="flex gap-2"><span class="text-brand font-bold">&bull;</span> Horm&ocirc;nios - fundamentais para o equil&iacute;brio</li>
+                                    <li class="flex gap-2"><span class="text-brand font-bold">&bull;</span> Maternidade e Planejamento fetal</li>
+                                    <li class="flex gap-2"><span class="text-brand font-bold">&bull;</span> Nutri&ccedil;&atilde;o extra: O poder dos suplementos</li>
+                                    <li class="flex gap-2"><span class="text-brand font-bold">&bull;</span> Voc&ecirc; &eacute; o respons&aacute;vel por sua sa&uacute;de</li>
+                                </ul>
+                            </div>
+                        </details>
+
+                        <div class="mt-auto flex flex-col gap-4">
+                            <p class="text-sm font-bold text-brand-dark mb-1">Escolha o formato ideal para voc&ecirc;:</p>
+                            <div class="flex flex-col sm:flex-row gap-4">
+                                <!-- Bot&atilde;o Impresso (Com Destaque) -->
+                                <a href="https://0u1w0x.short.gy/LivroSaudeBlindada" target="_blank" rel="noopener noreferrer" class="flex-1 px-4 py-4 bg-brand text-white font-bold rounded-xl hover:bg-brand-dark transition-all shadow-lg hover:shadow-brand/40 flex flex-col items-center justify-center gap-1 text-center border-2 border-brand">
+                                    <div class="flex items-center gap-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="book" class="lucide lucide-book w-5 h-5"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20"></path></svg>
+                                        <span>Vers&atilde;o Impressa</span>
+                                    </div>
+                                    <span class="text-[10px] bg-white/20 px-2 py-0.5 rounded-full font-medium">+ E-book de Presente</span>
+                                </a>
+
+                                <!-- Bot&atilde;o Digital (Outline) -->
+                                <a href="https://0u1w0x.short.gy/EbookSaudeBlindada" target="_blank" rel="noopener noreferrer" class="flex-1 px-4 py-4 bg-white text-brand-dark border-2 border-brand font-bold rounded-xl hover:bg-brand-light transition-all shadow-sm flex items-center justify-center gap-2 text-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="tablet" class="lucide lucide-tablet w-5 h-5"><rect width="16" height="20" x="4" y="2" rx="2" ry="2"></rect><line x1="12" x2="12.01" y1="18" y2="18"></line></svg>
+                                    <span>Vers&atilde;o Digital</span>
+                                </a>
+                            </div>
+                            <!-- <p class="text-xs text-gray-400 mt-2 text-center sm:text-left">
+                                *O E-book &eacute; enviado imediatamente por e-mail em ambas as op&ccedil;&otilde;es.
+                            </p> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Other Ebooks Grid -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
                 <!-- Ebook 1 -->
-                <div data-reveal data-reveal-delay="0" class="flex flex-col md:flex-row bg-brand-light rounded-3xl p-6 md:p-8 items-center gap-6 hover:shadow-lg transition-shadow border border-brand/10">
-                    <div class="w-32 h-44 bg-yellow-100 rounded-lg shadow-md flex-shrink-0 flex items-center justify-center text-yellow-600">
+                <div class="flex flex-col md:flex-row bg-white border border-gray-100 rounded-3xl p-6 md:p-8 items-center gap-6 hover:shadow-xl transition-all group">
+                    <div class="w-32 h-44 bg-yellow-100 rounded-lg shadow-md flex-shrink-0 flex items-center justify-center text-yellow-600 group-hover:scale-105 transition-transform">
                         <!-- Book Placeholder -->
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="sun" class="lucide lucide-sun w-12 h-12"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg>
                     </div>
                     <div class="text-center md:text-left">
-                        <div class="uppercase text-xs font-bold text-brand tracking-widest mb-2">E-book Exclusivo</div>
-                        <h3 class="text-2xl font-bold text-brand-dark mb-3">O Poder do Sol</h3>
-                        <p class="text-gray-600 mb-6 text-sm">Descubra como a exposição solar correta pode revolucionar sua saúde e imunidade.</p>
-                        <a href="https://p.eduzz.com/1379992" target="_blank" rel="noopener noreferrer" class="px-6 py-2 bg-white text-brand-dark font-semibold rounded-lg hover:bg-brand hover:text-white transition-colors border border-brand-light shadow-sm w-full md:w-auto text-center">
-                            Ler Agora
+                        <div class="uppercase text-xs font-bold text-gray-400 tracking-widest mb-2">Digital</div>
+                        <h3 class="text-xl font-bold text-brand-dark mb-2">O Poder do Sol</h3>
+                        <p class="text-gray-600 mb-4 text-sm line-clamp-2">Descubra como a exposi&ccedil;&atilde;o solar correta pode revolucionar sua sa&uacute;de e imunidade.</p>
+                        <a href="https://p.eduzz.com/1379992" target="_blank" rel="noopener noreferrer" class="px-5 py-2 bg-gray-50 text-brand-dark font-semibold rounded-lg hover:bg-brand hover:text-white transition-colors border border-gray-200 shadow-sm w-full md:w-auto text-sm">
+                            Saiba Mais
                         </a>
                     </div>
                 </div>
 
                 <!-- Ebook 2 -->
-                <div data-reveal data-reveal-delay="0.08" class="flex flex-col md:flex-row bg-brand-light rounded-3xl p-6 md:p-8 items-center gap-6 hover:shadow-lg transition-shadow border border-brand/10">
-                    <div class="w-32 h-44 bg-green-100 rounded-lg shadow-md flex-shrink-0 flex items-center justify-center text-green-600">
+                <div class="flex flex-col md:flex-row bg-white border border-gray-100 rounded-3xl p-6 md:p-8 items-center gap-6 hover:shadow-xl transition-all group">
+                    <div class="w-32 h-44 bg-green-100 rounded-lg shadow-md flex-shrink-0 flex items-center justify-center text-green-600 group-hover:scale-105 transition-transform">
                          <!-- Book Placeholder -->
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="pill" class="lucide lucide-pill w-12 h-12"><path d="m10.5 20.5 10-10a4.95 4.95 0 1 0-7-7l-10 10a4.95 4.95 0 1 0 7 7Z"></path><path d="m8.5 8.5 7 7"></path></svg>
                     </div>
                     <div class="text-center md:text-left">
-                        <div class="uppercase text-xs font-bold text-brand tracking-widest mb-2">Guia Prático</div>
-                        <h3 class="text-2xl font-bold text-brand-dark mb-3">Vitaminas e Minerais</h3>
-                        <p class="text-gray-600 mb-6 text-sm">O guia definitivo para entender a suplementação que seu corpo realmente precisa.</p>
-                        <a href="https://p.eduzz.com/1372711" target="_blank" rel="noopener noreferrer" class="px-6 py-2 bg-white text-brand-dark font-semibold rounded-lg hover:bg-brand hover:text-white transition-colors border border-brand-light shadow-sm w-full md:w-auto text-center">
-                            Ler Agora
+                        <div class="uppercase text-xs font-bold text-gray-400 tracking-widest mb-2">Digital</div>
+                        <h3 class="text-xl font-bold text-brand-dark mb-2">Vitaminas e Minerais</h3>
+                        <p class="text-gray-600 mb-4 text-sm line-clamp-2">O guia definitivo para entender a suplementa&ccedil;&atilde;o que seu corpo realmente precisa.</p>
+                        <a href="https://p.eduzz.com/1372711" target="_blank" rel="noopener noreferrer" class="px-5 py-2 bg-gray-50 text-brand-dark font-semibold rounded-lg hover:bg-brand hover:text-white transition-colors border border-gray-200 shadow-sm w-full md:w-auto text-sm">
+                            Saiba Mais
                         </a>
                     </div>
                 </div>
@@ -876,7 +1003,76 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
         </div>
     </section>
 
-    <!-- Footer / CTA Final -->
+    <section id="instagram" class="py-20 bg-gradient-to-br from-gray-50 to-white overflow-hidden relative">
+        <!-- Background Elements -->
+        <div class="absolute top-10 left-10 w-20 h-20 bg-brand/10 rounded-full blur-2xl"></div>
+        <div class="absolute bottom-10 right-10 w-32 h-32 bg-purple-100 rounded-full blur-3xl opacity-50"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-12">
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-pink-50 border border-pink-100 text-pink-600 text-sm font-semibold mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="instagram" class="lucide lucide-instagram w-4 h-4"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
+                    @drdiegolopestareszkiewicz
+                </div>
+                <h2 class="text-3xl md:text-4xl font-bold text-brand-dark">Acompanhe nossa comunidade</h2>
+                <p class="mt-4 text-gray-600 max-w-2xl mx-auto text-lg">
+                    Junte-se a mais de <strong class="text-brand-dark">200 mil pessoas</strong> que acompanham dicas diárias de saúde, longevidade e estilo de vida.
+                </p>
+            </div>
+
+            <!-- Fake Gallery Grid -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mb-12">
+                <!-- Post 1 -->
+                <a href="https://www.instagram.com/drdiegotareszkiewicz/p/DRhyksQkX6h/" target="_blank" rel="noopener noreferrer" class="aspect-square bg-gray-200 rounded-2xl overflow-hidden relative group cursor-pointer shadow-md hover:shadow-xl transition-all duration-300">
+                    <img src="resourses/post1.jpg" alt="Instagram Post 1" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 insta-overlay opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                        <div class="text-white flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="heart" class="lucide lucide-heart w-5 h-5 fill-white"><path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"></path></svg>
+                            <span class="font-bold text-sm">3.2k</span>
+                        </div>
+                    </div>
+                </a>
+                <!-- Post 2 -->
+                <a href="https://www.instagram.com/drdiegotareszkiewicz/p/DQw8YuZkdYM/" target="_blank" rel="noopener noreferrer" class="aspect-square bg-gray-200 rounded-2xl overflow-hidden relative group cursor-pointer shadow-md hover:shadow-xl transition-all duration-300 transform md:-translate-y-4">
+                    <img src="resourses/post2.jpg" alt="Instagram Post 2" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 insta-overlay opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                        <div class="text-white flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="heart" class="lucide lucide-heart w-5 h-5 fill-white"><path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"></path></svg>
+                            <span class="font-bold text-sm">5.8k</span>
+                        </div>
+                    </div>
+                </a>
+                <!-- Post 3 -->
+                <a href="https://www.instagram.com/drdiegotareszkiewicz/reel/DR1ijdmEtqK/" target="_blank" rel="noopener noreferrer" class="aspect-square bg-gray-200 rounded-2xl overflow-hidden relative group cursor-pointer shadow-md hover:shadow-xl transition-all duration-300">
+                    <img src="resourses/post3.jpg" alt="Instagram Post 3" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 insta-overlay opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                        <div class="text-white flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="heart" class="lucide lucide-heart w-5 h-5 fill-white"><path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"></path></svg>
+                            <span class="font-bold text-sm">4.1k</span>
+                        </div>
+                    </div>
+                </a>
+                <!-- Post 4 -->
+                <a href="https://www.instagram.com/drdiegotareszkiewicz/reel/DRwZAGNkgWV/" target="_blank" rel="noopener noreferrer" class="aspect-square bg-gray-200 rounded-2xl overflow-hidden relative group cursor-pointer shadow-md hover:shadow-xl transition-all duration-300 transform md:-translate-y-4">
+                    <img src="resourses/post4.jpg" alt="Instagram Post 4" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 insta-overlay opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                        <div class="text-white flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="heart" class="lucide lucide-heart w-5 h-5 fill-white"><path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"></path></svg>
+                            <span class="font-bold text-sm">2.9k</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="text-center">
+                <a href="https://www.instagram.com/drdiegolopestareszkiewicz/" target="_blank" class="inline-flex items-center px-8 py-3 bg-gradient-to-r from-purple-600 via-pink-600 to-red-500 text-white font-bold rounded-full shadow-lg hover:shadow-pink-500/30 transform hover:scale-105 transition-all gap-2" rel="noopener noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="instagram" class="lucide lucide-instagram w-5 h-5"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
+                    Seguir no Instagram
+                </a>
+            </div>
+        </div>
+    </section>
+
     <section id="contato" data-reveal class="py-20 bg-brand-dark text-white relative overflow-hidden">
         <div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
         <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
@@ -894,7 +1090,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
     </section>
 
     <footer class="bg-brand-dark border-t border-emerald-900 py-8 text-center text-emerald-400 text-sm">
-        <p>© 2025 Dr. Diego Tareszkiewicz. Todos os direitos reservados.</p>
+        <p>© 2025 Dr. Diego Tareszkiewicz.<br> Todos os direitos reservados.</p>
     </footer>
 
     <!-- Botão Voltar ao Topo -->
