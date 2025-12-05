@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cupons | Dr. Diego Tareszkiewicz</title>
+    <link rel="icon" type="image/png" href="resourses/favicon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            light: '#e6f7f4',
+                            DEFAULT: '#10b981',
+                            dark: '#064e3b',
+                            accent: '#34d399',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { overflow-x: hidden; }
+        .gradient-text {
+            background: linear-gradient(135deg, #064e3b 0%, #10b981 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 16px 40px -18px rgba(16, 185, 129, 0.35);
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-700 bg-white antialiased">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center">
+                    <a href="home.html" class="text-2xl font-bold text-brand-dark tracking-tight hover:text-brand-dark/80 transition-colors">Dr. Diego<span class="text-brand">.</span></a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="home.html#sobre" class="text-gray-600 hover:text-brand-dark transition-colors font-medium">Sobre</a>
+                    <a href="home.html#qualificacoes" class="text-gray-600 hover:text-brand-dark transition-colors font-medium">Formação</a>
+                    <a href="home.html#livros" class="text-gray-600 hover:text-brand-dark transition-colors font-medium">Livros</a>
+                    <a href="#cupons" class="text-gray-600 hover:text-brand-dark transition-colors font-medium">Cupons</a>
+                    <a href="home.html#contato" class="px-6 py-2.5 bg-brand text-white rounded-full font-semibold hover:bg-brand-dark transition-colors shadow-lg shadow-brand/20">
+                        Agendar Consulta
+                    </a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobileMenuButton" aria-expanded="false" aria-label="Abrir menu" class="text-gray-600 hover:text-brand-dark focus:outline-none flex items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="menu" class="lucide lucide-menu w-6 h-6"><path d="M4 5h16"></path><path d="M4 12h16"></path><path d="M4 19h16"></path></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="x" class="lucide lucide-x w-6 h-6 hidden"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile dropdown -->
+        <div id="mobileMenu" class="md:hidden hidden border-t border-gray-100 bg-white/90 backdrop-blur-md">
+            <div class="px-4 py-3 space-y-2">
+                <a href="home.html#sobre" class="block px-3 py-2 rounded-lg text-gray-700 hover:bg-brand-light hover:text-brand-dark font-medium">Sobre</a>
+                <a href="home.html#qualificacoes" class="block px-3 py-2 rounded-lg text-gray-700 hover:bg-brand-light hover:text-brand-dark font-medium">Formação</a>
+                <a href="home.html#livros" class="block px-3 py-2 rounded-lg text-gray-700 hover:bg-brand-light hover:text-brand-dark font-medium">Livros</a>
+                <a href="#cupons" class="block px-3 py-2 rounded-lg text-gray-700 hover:bg-brand-light hover:text-brand-dark font-medium">Cupons</a>
+                <a href="home.html#contato" class="block px-3 py-2 rounded-lg bg-brand text-white text-center font-semibold hover:bg-brand-dark shadow-md shadow-brand/20">Agendar Consulta</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="pt-36 pb-16 bg-gradient-to-b from-white to-brand-light/50">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-sm font-semibold uppercase tracking-[0.2em] text-brand mb-4">Benefícios Exclusivos</p>
+            <h1 class="text-4xl md:text-5xl font-bold text-brand-dark leading-tight mb-4">
+                Cupons selecionados para <span class="gradient-text">cuidar mais da sua saúde</span>
+            </h1>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                Descontos especiais com parceiros confiáveis. Use o cupom indicado e acesse o site oficial de cada marca.
+            </p>
+        </div>
+    </header>
+
+    <!-- Cupons -->
+    <main id="cupons" class="pb-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <article class="card-hover bg-white border border-gray-100 rounded-2xl shadow-sm p-6 flex flex-col items-center text-center">
+                    <div class="w-24 h-24 rounded-xl bg-gray-50 flex items-center justify-center mb-4 overflow-hidden">
+                        <img src="resourses/doctors.png" alt="Doctor's First" class="w-full h-full object-contain" loading="lazy">
+                    </div>
+                    <p class="text-sm text-gray-500 mb-1">Cupom:</p>
+                    <p class="text-lg font-bold text-brand-dark mb-4">DRDIEGO5</p>
+                    <button data-coupon="DRDIEGO5" data-url="https://bit.ly/DrDiegoDoctorFirst" class="w-full inline-flex items-center justify-center px-4 py-3 bg-brand text-white font-semibold rounded-xl hover:bg-brand-dark transition-colors shadow-brand/20 shadow">
+                        Copiar e visitar
+                    </button>
+                </article>
+
+                <article class="card-hover bg-white border border-gray-100 rounded-2xl shadow-sm p-6 flex flex-col items-center text-center">
+                    <div class="w-24 h-24 rounded-xl bg-gray-50 flex items-center justify-center mb-4 overflow-hidden">
+                        <img src="resourses/clinical.png" alt="Clinical Cuidar" class="w-full h-full object-contain" loading="lazy">
+                    </div>
+                    <p class="text-sm text-gray-500 mb-1">Cupom:</p>
+                    <p class="text-lg font-bold text-brand-dark mb-4">DRDIEGO</p>
+                    <button data-coupon="DRDIEGO" data-url="https://bit.ly/DrDiegoClinicalSupport" class="w-full inline-flex items-center justify-center px-4 py-3 bg-brand text-white font-semibold rounded-xl hover:bg-brand-dark transition-colors shadow-brand/20 shadow">
+                        Copiar e visitar
+                    </button>
+                </article>
+
+                <article class="card-hover bg-white border border-gray-100 rounded-2xl shadow-sm p-6 flex flex-col items-center text-center">
+                    <div class="w-24 h-24 rounded-xl bg-gray-50 flex items-center justify-center mb-4 overflow-hidden">
+                        <img src="resourses/hiiman.png" alt="Hiiman Doctors" class="w-full h-full object-contain" loading="lazy">
+                    </div>
+                    <p class="text-sm text-gray-500 mb-1">Cupom:</p>
+                    <p class="text-lg font-bold text-brand-dark mb-4">#DRDIEGO</p>
+                    <button data-coupon="#DRDIEGO" data-url="https://bit.ly/DrDiegoHumanDoctors" class="w-full inline-flex items-center justify-center px-4 py-3 bg-brand text-white font-semibold rounded-xl hover:bg-brand-dark transition-colors shadow-brand/20 shadow">
+                        Copiar e visitar
+                    </button>
+                </article>
+
+                <article class="card-hover bg-white border border-gray-100 rounded-2xl shadow-sm p-6 flex flex-col items-center text-center">
+                    <div class="w-24 h-24 rounded-xl bg-gray-50 flex items-center justify-center mb-4 overflow-hidden">
+                        <img src="resourses/eora.png" alt="Eora Brasil" class="w-full h-full object-contain" loading="lazy">
+                    </div>
+                    <p class="text-sm text-gray-500 mb-1">Cupom:</p>
+                    <p class="text-lg font-bold text-brand-dark mb-4">DIEGO10</p>
+                    <button data-coupon="DIEGO10" data-url="https://bit.ly/DrDiegoEoraBrasil" class="w-full inline-flex items-center justify-center px-4 py-3 bg-brand text-white font-semibold rounded-xl hover:bg-brand-dark transition-colors shadow-brand/20 shadow">
+                        Copiar e visitar
+                    </button>
+                </article>
+
+                <article class="card-hover bg-white border border-gray-100 rounded-2xl shadow-sm p-6 flex flex-col items-center text-center">
+                    <div class="w-24 h-24 rounded-xl bg-gray-50 flex items-center justify-center mb-4 overflow-hidden">
+                        <img src="resourses/oral.jpg" alt="Oral Phytus" class="w-full h-full object-contain" loading="lazy">
+                    </div>
+                    <p class="text-sm text-gray-500 mb-1">Cupom:</p>
+                    <p class="text-lg font-bold text-brand-dark mb-4">DRDIEGO</p>
+                    <button data-coupon="DRDIEGO" data-url="https://bit.ly/DrDiegoOralphytus" class="w-full inline-flex items-center justify-center px-4 py-3 bg-brand text-white font-semibold rounded-xl hover:bg-brand-dark transition-colors shadow-brand/20 shadow">
+                        Copiar e visitar
+                    </button>
+                </article>
+
+                <article class="card-hover bg-white border border-gray-100 rounded-2xl shadow-sm p-6 flex flex-col items-center text-center">
+                    <div class="w-24 h-24 rounded-xl bg-gray-50 flex items-center justify-center mb-4 overflow-hidden">
+                        <img src="resourses/100.png" alt="100 Verme" class="w-full h-full object-contain" loading="lazy">
+                    </div>
+                    <p class="text-sm text-gray-500 mb-1">Cupom:</p>
+                    <p class="text-lg font-bold text-brand-dark mb-4">DRDIEGO</p>
+                    <button data-coupon="DRDIEGO" data-url="https://bit.ly/DrDiego100Verme" class="w-full inline-flex items-center justify-center px-4 py-3 bg-brand text-white font-semibold rounded-xl hover:bg-brand-dark transition-colors shadow-brand/20 shadow">
+                        Copiar e visitar
+                    </button>
+                </article>
+
+                <article class="card-hover bg-white border border-gray-100 rounded-2xl shadow-sm p-6 flex flex-col items-center text-center">
+                    <div class="w-24 h-24 rounded-xl bg-gray-50 flex items-center justify-center mb-4 overflow-hidden">
+                        <img src="resourses/khor.png" alt="Khor" class="w-full h-full object-contain" loading="lazy">
+                    </div>
+                    <p class="text-sm text-gray-500 mb-1">Cupom:</p>
+                    <p class="text-lg font-bold text-brand-dark mb-4">DRDIEGO</p>
+                    <button data-coupon="DRDIEGO" data-url="https://bit.ly/DrDiegoKhorcosmetics" class="w-full inline-flex items-center justify-center px-4 py-3 bg-brand text-white font-semibold rounded-xl hover:bg-brand-dark transition-colors shadow-brand/20 shadow">
+                        Copiar e visitar
+                    </button>
+                </article>
+
+                <article class="card-hover bg-white border border-gray-100 rounded-2xl shadow-sm p-6 flex flex-col items-center text-center">
+                    <div class="w-24 h-24 rounded-xl bg-gray-50 flex items-center justify-center mb-4 overflow-hidden">
+                        <img src="resourses/filtro.png" alt="Filtrolar" class="w-full h-full object-contain" loading="lazy">
+                    </div>
+                    <p class="text-sm text-gray-500 mb-1">Cupom:</p>
+                    <p class="text-lg font-bold text-brand-dark mb-4">DRDIEGO</p>
+                    <button data-coupon="DRDIEGO" data-url="https://bit.ly/DrDiegoFiltroLar" class="w-full inline-flex items-center justify-center px-4 py-3 bg-brand text-white font-semibold rounded-xl hover:bg-brand-dark transition-colors shadow-brand/20 shadow">
+                        Copiar e visitar
+                    </button>
+                </article>
+
+                <article class="card-hover bg-white border border-gray-100 rounded-2xl shadow-sm p-6 flex flex-col items-center text-center">
+                    <div class="w-24 h-24 rounded-xl bg-gray-50 flex items-center justify-center mb-4 overflow-hidden">
+                        <img src="resourses/life.png" alt="Life Option" class="w-full h-full object-contain" loading="lazy">
+                    </div>
+                    <p class="text-sm text-gray-500 mb-1">Cupom:</p>
+                    <p class="text-lg font-bold text-brand-dark mb-4">DRDIEGO</p>
+                    <button data-coupon="DRDIEGO" data-url="https://bit.ly/DrDiegoLifeOption" class="w-full inline-flex items-center justify-center px-4 py-3 bg-brand text-white font-semibold rounded-xl hover:bg-brand-dark transition-colors shadow-brand/20 shadow">
+                        Copiar e visitar
+                    </button>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-brand-dark border-t border-emerald-900 py-10 text-center text-emerald-50 text-sm">
+        <p>© 2025 Dr. Diego Tareszkiewicz. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+
+        // Menu mobile (sandwich)
+        const mobileMenuButton = document.getElementById('mobileMenuButton');
+        const mobileMenu = document.getElementById('mobileMenu');
+        if (mobileMenuButton && mobileMenu) {
+            const [menuIcon, closeIcon] = mobileMenuButton.querySelectorAll('svg');
+            const toggleMobileMenu = () => {
+                const isOpen = !mobileMenu.classList.contains('hidden');
+                if (isOpen) {
+                    mobileMenu.classList.add('hidden');
+                    mobileMenuButton.setAttribute('aria-expanded', 'false');
+                    menuIcon.classList.remove('hidden');
+                    closeIcon.classList.add('hidden');
+                } else {
+                    mobileMenu.classList.remove('hidden');
+                    mobileMenuButton.setAttribute('aria-expanded', 'true');
+                    menuIcon.classList.add('hidden');
+                    closeIcon.classList.remove('hidden');
+                }
+            };
+            mobileMenuButton.addEventListener('click', toggleMobileMenu);
+            mobileMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                    mobileMenuButton.setAttribute('aria-expanded', 'false');
+                    menuIcon.classList.remove('hidden');
+                    closeIcon.classList.add('hidden');
+                });
+            });
+            window.addEventListener('resize', () => {
+                if (window.innerWidth >= 768) {
+                    mobileMenu.classList.add('hidden');
+                    mobileMenuButton.setAttribute('aria-expanded', 'false');
+                    menuIcon.classList.remove('hidden');
+                    closeIcon.classList.add('hidden');
+                }
+            });
+        }
+
+        // Copiar cupom e visitar parceiro
+        document.querySelectorAll('[data-coupon]').forEach(button => {
+            button.addEventListener('click', async () => {
+                const code = button.getAttribute('data-coupon');
+                const url = button.getAttribute('data-url');
+                try {
+                    await navigator.clipboard.writeText(code);
+                } catch (e) {
+                    // fallback: nada além de seguir para o link
+                }
+                if (url) {
+                    window.open(url, '_blank', 'noopener');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
